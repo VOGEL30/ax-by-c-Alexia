@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Equação Diofantina: ax + by = c</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card" role="main">
+    <h1>Resolver: <small style="font-weight:600;color:#555">ax + by = c</small></h1>
+    <p class="lead">Insira os inteiros <strong>a</strong>, <strong>b</strong> e <strong>c</strong>. O programa usa o algoritmo euclidiano estendido para achar uma solução inteira (se existir).</p>
+
+    <div class="grid">
+      <div>
+        <label for="a">a</label>
+        <input id="a" type="number" step="1" value="15" />
+      </div>
+      <div>
+        <label for="b">b</label>
+        <input id="b" type="number" step="1" value="25" />
+      </div>
+      <div>
+        <label for="c">c</label>
+        <input id="c" type="number" step="1" value="100" />
+      </div>
+
+      <div class="controls">
+        <button id="solveBtn">Resolver</button>
+        <button class="ghost" id="randomBtn">Gerar aleatório</button>
+        <button class="ghost" id="clearBtn">Limpar</button>
+      </div>
+    </div>
+
+    <pre id="output" class="result" aria-live="polite" style="display:none"></pre>
+    <div class="hint">Observação: se <em>d = gcd(a,b)</em> não divide <em>c</em>, então não há solução inteira. Caso contrário, aparece uma solução particular e a forma geral com parâmetro <em>t</em>.</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
