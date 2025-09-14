@@ -1,5 +1,5 @@
 :root {
-    --bg: #000000;
+    --bg: #f6f5f5;
     --card: #fff1f1;
     --accent: #ff07c1;
     --muted: #666;
@@ -89,8 +89,8 @@
   }
   
   pre.result {
-    background: #000000;
-    border: 1px solid #0f0f0f;
+    background: #fff9f9;
+    border: 1px solid #fffcfc;
     padding: 12px;
     border-radius: 8px;
     margin-top: 14px;
